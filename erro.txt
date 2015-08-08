@@ -1,0 +1,43 @@
+|Loading Grails 2.4.5
+|Configuring classpath
+.
+|Environment set to development
+.................................
+|Packaging Grails application
+....................................
+|Running Grails application
+Error |
+2015-07-27 08:27:10,619 [localhost-startStop-1] ERROR context.GrailsContextLoaderListener  - Error initializing the application: Error creating bean with name 'transactionManagerPostProcessor': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Invocation of init method failed; nested exception is groovy.lang.MissingMethodException: No signature of method: tasks.Task.content() is applicable for argument types: (java.util.LinkedHashMap) values: [[blank:false]]
+Possible solutions: count(), collect(), collect(groovy.lang.Closure), ident(), insert(), notify()
+Message: Error creating bean with name 'transactionManagerPostProcessor': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Invocation of init method failed; nested exception is groovy.lang.MissingMethodException: No signature of method: tasks.Task.content() is applicable for argument types: (java.util.LinkedHashMap) values: [[blank:false]]
+Possible solutions: count(), collect(), collect(groovy.lang.Closure), ident(), insert(), notify()
+    Line | Method
+->>  266 | run       in java.util.concurrent.FutureTask
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|   1142 | runWorker in java.util.concurrent.ThreadPoolExecutor
+|    617 | run . . . in java.util.concurrent.ThreadPoolExecutor$Worker
+^    745 | run       in java.lang.Thread
+Caused by BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Invocation of init method failed; nested exception is groovy.lang.MissingMethodException: No signature of method: tasks.Task.content() is applicable for argument types: (java.util.LinkedHashMap) values: [[blank:false]]
+Possible solutions: count(), collect(), collect(groovy.lang.Closure), ident(), insert(), notify()
+->>  266 | run       in java.util.concurrent.FutureTask
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|   1142 | runWorker in java.util.concurrent.ThreadPoolExecutor
+|    617 | run . . . in java.util.concurrent.ThreadPoolExecutor$Worker
+^    745 | run       in java.lang.Thread
+Caused by BeanCreationException: Error creating bean with name 'sessionFactory': Invocation of init method failed; nested exception is groovy.lang.MissingMethodException: No signature of method: tasks.Task.content() is applicable for argument types: (java.util.LinkedHashMap) values: [[blank:false]]
+Possible solutions: count(), collect(), collect(groovy.lang.Closure), ident(), insert(), notify()
+->>  266 | run       in java.util.concurrent.FutureTask
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|   1142 | runWorker in java.util.concurrent.ThreadPoolExecutor
+|    617 | run . . . in java.util.concurrent.ThreadPoolExecutor$Worker
+^    745 | run       in java.lang.Thread
+Caused by MissingMethodException: No signature of method: tasks.Task.content() is applicable for argument types: (java.util.LinkedHashMap) values: [[blank:false]]
+Possible solutions: count(), collect(), collect(groovy.lang.Closure), ident(), insert(), notify()
+->>   11 | doCall    in tasks.Task$__clinit__closure1
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+|    266 | run       in java.util.concurrent.FutureTask
+|   1142 | runWorker in java.util.concurrent.ThreadPoolExecutor
+|    617 | run       in java.util.concurrent.ThreadPoolExecutor$Worker
+^    745 | run . . . in java.lang.Thread
+Error |
+Forked Grails VM exited with error
