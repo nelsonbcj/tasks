@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 	<title>Tarefas</title>
-	<link rel="stylesheet" href="/tasks/assets/tasks.css?compile=false"  />
+	<link rel="stylesheet" href="/tasks/assets/tasks.css?compile=false"  /><!--css-->
 	<meta name="layout" content="main-categoria">
 	<g:set var="entityName" value="${message(code: 'categoria.label', default: 'Categoria')}" />
 	<title><g:message code="default.list.label" args="[entityName]" /></title>
